@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quản lý học viện nghiên cứu & giảng dạy</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Quản lý học viện</h1>
+      <div>
+        <label for="personType">Loại người dùng:</label>
+        <select id="personType">
+          <option value="student">Học viên</option>
+          <option value="employee">Nhân viên</option>
+          <option value="customer">Khách hàng</option>
+        </select>
+      </div>
+      <!-- Form và giao diện người dùng sẽ được tạo và quản lý thông qua JavaScript -->
+      <div id="userForm"></div>
+      <div>
+        <button onclick="addUser()">Thêm người dùng</button>
+        <button onclick="deleteUser()">Xóa người dùng</button>
+        <button onclick="updateUser()">Cập nhật thông tin</button>
+        <button onclick="sortByName()">Sắp xếp theo tên</button>
+        <button onclick="filterByType()">Lọc theo loại người dùng</button>
+      </div>
+      <div id="userList"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
